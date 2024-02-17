@@ -438,13 +438,13 @@ input {
         background-color: brown;
         display: block;
         /* height: 149vh; */
-        height: 91vh;
+        height: 110vh;
     }
 
     .section {
         width: 100%;
         /* height: 149vh; */
-        height: 91vh;
+        height:110vh;
         position: relative;
         padding-top: 38px;
     }
@@ -567,7 +567,7 @@ input {
     }
 
     .section2 {
-        position: relative;
+        /* position: relative; */
         bottom: 923px;
         height: 51px;
         width: 100%;
@@ -584,7 +584,7 @@ input {
     .container2 {
         margin-top: 0px;
         /* height: 200vh; */
-        height: 125vh;
+        height: 150vh;
     }
 
     h2 {
@@ -660,10 +660,10 @@ input {
 
     .container4 {
         /* height: 122vh; */
-        height: 74vh;
+        height: 150vh;
     }
 
-.container5{height: 54vh;}
+.container5{height: 100vh;}
     .part1 {
         flex-wrap: wrap;
     }
