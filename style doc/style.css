@@ -14,8 +14,8 @@
     width: 350px;
     height: 100vh;
     background-color: rgb(6, 6, 24);
-    position: relative; 
-    
+    position: relative;
+
 
 }
 
@@ -173,7 +173,7 @@
 
 
 .section2 {
-    width: 80%; 
+    width: 80%;
     height: 100vh;
     background-color: rgb(33, 33, 43);
 
@@ -247,7 +247,7 @@ a:hover {
 }
 
 .container2 {
-    width: 100%; 
+    width: 100%;
     height: 90vh;
     background-color: rgb(33, 33, 43);
     color: rgb(238, 255, 0);
@@ -262,11 +262,11 @@ a:hover {
 
 
 .single-line {
-     width: 80%; 
-     background-color: rgb(175, 175, 255);
+    width: 80%;
+    background-color: rgb(175, 175, 255);
     height: 4px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
@@ -295,8 +295,8 @@ i {
 }
 
 .vertical-dic {
-    width: 205px;
-    font-size: 11px;
+    width: 220px;
+    font-size: 16px;
     position: relative;
     right: 95px;
     top: 10px;
@@ -304,7 +304,7 @@ i {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.151);
     font-family: Arial, Helvetica, sans-serif;
-    height: 205px;
+    height: 210px;
     line-height: 30px;
 
 }
@@ -359,7 +359,7 @@ i {
 }
 
 .picture:hover {
-    
+
     height: 450px;
     width: 500px;
 }
@@ -435,16 +435,23 @@ input {
 
 @media screen and (max-width: 780px) {
     .container {
+        width: 100%;
         background-color: brown;
-        display: block;
-        height: 149vh;
+        /* display: block; */
+        /* height: 149vh; */
+        display: flex;
+        
+        flex-wrap: wrap;
+        
+        height: 99vh;
     }
 
     .section {
         width: 100%;
-        height: 149vh;
+        /* height: 149vh; */
         position: relative;
         padding-top: 38px;
+height: 99vh;
     }
 
 
@@ -453,6 +460,7 @@ input {
     .box2 {
         width: 80%;
         border-radius: 4px;
+
     }
 
     .box1,
@@ -460,6 +468,7 @@ input {
         font-size: 15px;
         /* background-color: transparent; */
         box-shadow: none;
+
     }
 
     .img1 {
@@ -542,20 +551,20 @@ input {
     #panel2 {
         display: flex;
         color: white;
-        width: 341px;
-        justify-content: center;
+        width: 312px;
         margin-left: auto;
         margin-right: auto;
+        flex-direction: column;
+       
+        
+        }
 
+    .leftside {
+        padding: 10px;
+       
+       
     }
-
-    /* .horizontal {
-        display: none;
-    } */
-
-    .move {
-        padding-right: 46px;
-    }
+    .black{color: rgb(238, 255, 0); font-weight: bold;}
 
     .profile {
         display: none;
@@ -569,7 +578,7 @@ input {
     }
 
     .list {
-        position: relative;
+        position: fixed;
         width: 100%;
         font-size: 14px;
     }
@@ -578,11 +587,15 @@ input {
 
     .container2 {
         margin-top: 0px;
-        height: 200vh;
+        /* height: 180vh; */
+        width: 100%;
+        height: 118vh;
+        
     }
 
     h2 {
         font-size: 18px;
+        
     }
 
     .para2 {
@@ -598,22 +611,25 @@ input {
     }
 
     .single-line {
-        display: block;
-        position: relative;
+        /* display: block;
+        position: relative; */
+        display: inline-block;
         bottom: 105px;
         background-color: transparent;
         font-size: 18px;
+        margin-top: -40px;
+       
+        
+        
     }
 
-    .vertical {
+    .vertical{
         display: inline;
-        height: 1px;
-        width: 0px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 10px;
         background-color: transparent;
         font-size: 18px;
+        
 
 
     }
@@ -621,10 +637,10 @@ input {
     .vertical-dic {
         margin-left: 96px;
         width: 100%;
-        height: 144px;
-        font-size: 15px;
-        flex-wrap: wrap;
-
+        height: 125px;
+        font-size: 14px;
+    
+      
     }
 
     i {
@@ -632,7 +648,8 @@ input {
     }
 
     .container3 {
-        height: 150vh;
+        /* height: 145vh; */
+        height: 100vh;
     }
 
     .service {
@@ -648,44 +665,50 @@ input {
     .App,
     .software {
         width: 80%;
-        height: 200px;
+        height: 190px;
+        font-size: 14px;
+        
     }
 
     .container4 {
-        height: 122vh;
+        height: 100vh;
     }
 
 
     .part1 {
-        flex-wrap: wrap;
-    }
+        flex-direction: column;
+        justify-content: space-between;
 
-    .picture {
-        width: 218px;
-        height: 300px;
+    }
+   
+    .snapshot {
+        width: 100%;
+        height: 194px;
         pointer-events: none;
+        padding-top: 10px;
+        
     }
-
+.container5{height: 63vh;}
     form {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 80px;
 
     }
 
     .form {
+        /* position: relative; */
         display: block;
         width: 350px;
         height: 300px;
-
         border-radius: 5px;
 
 
     }
 
-    form:hover {
-        border-color: none;
+    .form:hover {
+    border: none;
     }
 
     .form1 {
@@ -722,3 +745,4 @@ input {
         visibility: visible;
     }
 }
+
