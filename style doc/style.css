@@ -14,8 +14,8 @@
     width: 350px;
     height: 100vh;
     background-color: rgb(6, 6, 24);
-    position: relative; 
-    
+    position: relative;
+
 
 }
 
@@ -173,7 +173,7 @@
 
 
 .section2 {
-    width: 80%; 
+    width: 80%;
     height: 100vh;
     background-color: rgb(33, 33, 43);
 
@@ -247,7 +247,7 @@ a:hover {
 }
 
 .container2 {
-    width: 100%; 
+    width: 100%;
     height: 90vh;
     background-color: rgb(33, 33, 43);
     color: rgb(238, 255, 0);
@@ -262,11 +262,11 @@ a:hover {
 
 
 .single-line {
-     width: 80%; 
-     background-color: rgb(175, 175, 255);
+    width: 80%;
+    background-color: rgb(175, 175, 255);
     height: 4px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
@@ -296,7 +296,7 @@ i {
 
 .vertical-dic {
     width: 220px;
-    font-size: 16px;
+    font-size: 12px;
     position: relative;
     right: 95px;
     top: 10px;
@@ -359,7 +359,7 @@ i {
 }
 
 .picture:hover {
-    
+
     height: 450px;
     width: 500px;
 }
@@ -434,52 +434,35 @@ input {
 /* Media Queries */
 
 @media screen and (max-width: 780px) {
+
+
     .container {
-        background-color: brown;
         display: block;
-        /* height: 149vh; */
-        height: 110vh;
+        background-color: brown;
+        height: 144vh;
     }
 
     .section {
         width: 100%;
-        /* height: 149vh; */
-        height:110vh;
-        position: relative;
-        padding-top: 38px;
+        height: 144vh;
+        padding-top: 14px;
+     
     }
-
-
 
     .box1,
     .box2 {
-        width: 80%;
+        width: 85%;
         border-radius: 4px;
+        
     }
-
-    .box1,
-    .box2 {
-        font-size: 15px;
-        /* background-color: transparent; */
-        box-shadow: none;
-    }
-
+  
     .img1 {
         border-radius: 100px;
-        margin-top: 5px;
+        margin-top: 15px;
     }
-
+b
     .box2 {
         height: 310px;
-    }
-
-    h4 {
-        color: rgb(255, 247, 0);
-        text-decoration: underline;
-    }
-
-    .HTML {
-        margin-left: 50px;
     }
 
     .code1 {
@@ -510,21 +493,29 @@ input {
         margin-right: auto;
     }
 
+    h4 {
+        color: rgb(255, 247, 0);
+        text-decoration: underline;
+    }
+
+    .HTML {
+        margin-left: 10px;
+    }
+
     .para {
         margin-right: 25px;
     }
 
     .box3 {
-        width: 80%;
+        width: 85%;
         height: 300px;
         font-size: 15px;
         border-radius: 4px;
         padding-bottom: 5px;
         display: block;
         margin-top: 20px;
-        box-shadow: none;
+        /* box-shadow: none; */
     }
-
 
     .panel {
 
@@ -551,40 +542,50 @@ input {
         flex-direction: column;
 
     }
-.black{color: yellow; font-weight: bold;}
-    /* .horizontal {
-        display: none;
-    } */
 
-    /* .move {
-        padding-right: 46px;
-    } */
-    .leftside{padding: 10px;}
-
-
-    .profile {
-        display: none;
+    .black {
+        color: yellow;
+        font-weight: bold;
     }
 
     .section2 {
-        /* position: relative; */
-        bottom: 923px;
-        height: 51px;
-        width: 100%;
-    }
-
-    .list {
         position: relative;
-        width: 100%;
-        font-size: 14px;
+        height: 40px;
+        bottom: 884px;
+        background-color:  rgb(6, 6, 24);;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+       
     }
 
+    .profile {
+    display: none;
+    }
+    
+     .list {
+        position:fixed;
+        font-size: 12px;
+        height: 45px;
+        width: 85%;
+        
+        margin-left: 80px;
+        border-radius: 4px;border-color: orange;
+        box-shadow:2px 0.5px 0.5px 2px orange ;
+        
+      
+} 
+
+.list:hover{color:orangered;
+cursor: pointer;}
+    .leftside{padding: 10px;}
 
 
-    .container2 {
+   
+.container2 {
         margin-top: 0px;
-        /* height: 200vh; */
-        height: 150vh;
+        height: 200vh;
+      
     }
 
     h2 {
@@ -601,7 +602,7 @@ input {
         padding-bottom: 10px;
         margin-left: 0px;
 
-    }
+    } 
 
     .single-line {
         display: block;
@@ -638,8 +639,8 @@ input {
     }
 
     .container3 {
-        /* height: 150vh; */
-        height: 94vh;
+       height: 150vh; 
+        
     }
 
     .service {
@@ -654,31 +655,34 @@ input {
     .Web-design,
     .App,
     .software {
-        width: 80%;
+        width: 350px;
         height: 200px;
     }
 
     .container4 {
-        /* height: 122vh; */
+         
         height: 150vh;
     }
 
-.container5{height: 100vh;}
+   
     .part1 {
         flex-wrap: wrap;
     }
 
     .picture {
-        width: 218px;
-        height: 300px;
+        width: 300px;
+        height: 190px;
         pointer-events: none;
+    }
+    .container5 {
+        height: 100vh;
     }
 
     form {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 70px;
 
     }
 
@@ -686,14 +690,13 @@ input {
         display: block;
         width: 350px;
         height: 300px;
-
         border-radius: 5px;
 
 
     }
 
-    form:hover {
-        border-color: none;
+    .form:hover {
+        border: none;
     }
 
     .form1 {
@@ -729,4 +732,4 @@ input {
     #one {
         visibility: visible;
     }
-}
+} 
