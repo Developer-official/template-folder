@@ -433,16 +433,19 @@ input {
 
     .container {
         display: block;
-        background-color: brown;
-        height: 144vh; 
-       
+        /* background-color: brown; */
+        height: 144vh;
+
 
     }
 
     .section {
         width: 100%;
         height: 144vh;
-        padding-top: 20px;
+        padding-top: 10px;
+        background-color: rgb(33, 33, 43);
+        
+        
 
     }
 
@@ -450,6 +453,7 @@ input {
     .box2 {
         width: 85%;
         border-radius: 4px;
+        background-color: rgb(24, 24, 30);
 
     }
 
@@ -458,7 +462,7 @@ input {
         margin-top: 15px;
     }
 
-    b .box2 {
+    .box2 {
         height: 310px;
     }
 
@@ -511,7 +515,8 @@ input {
         padding-bottom: 5px;
         display: block;
         margin-top: 16px;
-        
+        background-color: rgb(24, 24, 30);
+
     }
 
     .panel {
@@ -544,34 +549,38 @@ input {
         color: yellow;
         font-weight: bold;
     }
- 
-   .section2 {position:relative;
-        height: 40px;
-        bottom: 890px;
-        background-color: rgb(6, 6, 24);
-         align-items: center;
-        display: flex;
-       justify-content: space-around; 
-        width: 100%;
 
-    } 
+     .section2 {
+        position: fixed; 
+        height: 50px;
+        background-color: rgb(6, 6, 24);
+        /* align-items: center; */
+        /* display: flex; */
+        /* justify-content: space-around; */
+        width: 100%;
+        /* bottom:  900px; */
+        bottom:  886px;
+        
+    }   
+    /* .section2{display: none;} */
 
     .profile {
         display: none;
     }
 
-    .list {
-        position: sticky;
+     .list {
+      position: absolute;
         font-size: 12px;
-        height: 45px;
-         width: 100%; 
+        height: 50px;
+        width: 100%;
         border-radius: 4px;
         border-color: orange;
         box-shadow: 2px 0.5px 0.5px 2px orange;
+       
         
-
-
     } 
+
+  
 
     .leftside {
         padding: 10px;
@@ -661,37 +670,39 @@ input {
         height: 150vh;
     }
 
-
-    .part1 {
-        flex-wrap: wrap;
+.part1{flex-wrap: wrap;}
+    .part3,.part2 {
+        
+        width: 100%;
     }
 
     .picture {
-        width: 300px;
-        height: 190px;
+        /* width: 300px;
+        height: 190px; */
+        width: 100%;
+        height: 198px;
         pointer-events: none;
     }
 
     .container5 {
-        height: 70vh;
+        height: 90vh;
     }
 
     form {
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 70px;
+        align-items: center; */
+         /* flex-wrap: wrap;  */
+        margin-top: 90px;
+
+
+
 
     }
 
     .form {
-        display: block;
-        width: 350px;
-        height: 300px;
-        border-radius: 5px;
-
-
+    height: 350px;
+   
     }
 
     .form:hover {
@@ -699,20 +710,24 @@ input {
     }
 
     .form1 {
-        display: flex;
-        width: 345px;
+
+        width: 340px;
         flex-wrap: wrap;
-        margin-left: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        
+
+
     }
 
     input {
-        width: 160px;
+        width: 100%;
         height: 50px;
         margin: 5px;
         border: 2px solid orange;
-        background-color: rgb(255, 255, 255);
-        position: sticky;
-        
+        background-color: rgb(255, 255, 255); 
+
+
 
     }
 
@@ -734,4 +749,9 @@ input {
     #one {
         visibility: visible;
     }
-}
+
+
+    /* hr {
+        display: none;
+        
+    } */  }  
