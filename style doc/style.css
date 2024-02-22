@@ -2,20 +2,50 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.main {
     width: 100%;
-    height: 100vh;
+
+}
+
+.nav {
     display: flex;
+    border: 2px solid rgb(255, 103, 1);
+    background-color: rgb(6, 4, 24);
+    height: 50px;
+    justify-content: space-around;
+    width: 77%;
+    align-items: center;
+    position: fixed;
+    margin-left: 350px;
+
+}
+
+a {
+    color: rgb(0, 238, 255);
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
 }
 
 .section {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(33, 33, 43);
+}
+
+.box {
     width: 350px;
     height: 100vh;
     background-color: rgb(6, 6, 24);
-    position: relative;
-
 
 }
 
@@ -30,7 +60,6 @@
     text-align: center;
     color: rgb(255, 255, 255);
     line-height: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 4px 4px 4px 4px rgba(1, 234, 255, 0.493);
 }
 
@@ -50,13 +79,12 @@
     border-radius: 10px;
     color: rgb(255, 255, 255);
     line-height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 4px 4px 4px 4px rgba(1, 234, 255, 0.493);
 }
 
 .head1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .code1 {
@@ -114,7 +142,6 @@
     border-radius: 10px;
     color: white;
     line-height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 4px 4px 4px 4px rgba(1, 234, 255, 0.493);
 }
 
@@ -172,42 +199,8 @@
 }
 
 
-.section2 {
-    width: 80%;
-    height: 100vh;
-    background-color: rgb(33, 33, 43);
-
-
-}
-
-.list {
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid white;
-    background-color: rgb(6, 4, 24);
-    height: 50px;
-    align-items: center;
-    width: 77.5%;
-    position: fixed;
-}
-
-a {
-    color: rgb(0, 238, 255);
-    text-decoration: none;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
-}
-
-a:hover {
-    color: orange;
-
-    text-decoration: underline;
-}
-
 .profile {
-    width: 80%;
+    width: 70%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -246,19 +239,17 @@ a:hover {
     justify-content: center;
 }
 
-.container2 {
-    width: 100%;
-    height: 90vh;
+.section2,
+.section3,
+.section4,
+.section5 {
+    height: 100vh;
     background-color: rgb(33, 33, 43);
     color: rgb(238, 255, 0);
     text-align: center;
     line-height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
-
 
 }
-
 
 
 .single-line {
@@ -282,9 +273,10 @@ a:hover {
 }
 
 h5 {
+
     padding-top: 30px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 i {
@@ -300,23 +292,11 @@ i {
     position: relative;
     right: 95px;
     top: 10px;
-    color: rgb(0, 255, 247);
+    color: aqua;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.151);
-    font-family: Arial, Helvetica, sans-serif;
     height: 205px;
     line-height: 30px;
-
-}
-
-
-
-.container3 {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(33, 33, 43);
-    color: rgb(238, 255, 0);
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -340,33 +320,6 @@ i {
     padding-left: 5px;
     text-align: center;
     line-height: 30px;
-
-
-
-
-}
-
-.container4 {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(33, 33, 43);
-    color: rgb(238, 255, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-
-
-
-}
-
-
-.container5 {
-    width: 100%;
-    height: 90vh;
-    background-color: rgb(33, 33, 43);
-    color: rgb(238, 255, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-
 }
 
 form {
@@ -374,7 +327,6 @@ form {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-
 }
 
 .form {
@@ -414,8 +366,6 @@ input {
 .footer {
     background-color: rgb(0, 0, 0);
     width: 100%;
-
-
 }
 
 #one {
@@ -424,29 +374,22 @@ input {
     height: 30px;
 }
 
-
-
 /* Media Queries */
 
 @media screen and (max-width: 780px) {
 
+    .section {
 
-    .container {
-        display: block;
-        /* background-color: brown; */
         height: 144vh;
-
 
     }
 
-    .section {
+    .box {
         width: 100%;
         height: 144vh;
-        padding-top: 10px;
-        background-color: rgb(33, 33, 43);
-        
-        
-
+        display: flex;
+        flex-wrap: wrap;
+         background-color: rgb(33, 33, 43);
     }
 
     .box1,
@@ -550,47 +493,31 @@ input {
         font-weight: bold;
     }
 
-     .section2 {
-        position: fixed; 
-        height: 50px;
-        background-color: rgb(6, 6, 24);
-        /* align-items: center; */
-        /* display: flex; */
-        /* justify-content: space-around; */
-        width: 100%;
-        /* bottom:  900px; */
-        bottom:  886px;
-        
-    }   
-    /* .section2{display: none;} */
-
     .profile {
         display: none;
     }
 
-     .list {
-      position: absolute;
+    .nav {
+        position: relative;
         font-size: 12px;
         height: 50px;
         width: 100%;
         border-radius: 4px;
         border-color: orange;
         box-shadow: 2px 0.5px 0.5px 2px orange;
-       
-        
-    } 
+        right: 351px;
+    }
 
-  
+
 
     .leftside {
         padding: 10px;
     }
 
-
-
-    .container2 {
+    .section2 {
         margin-top: 0px;
-        height: 200vh;
+        height: 190vh;
+
 
     }
 
@@ -620,8 +547,6 @@ input {
 
     .vertical {
         display: inline;
-        height: 1px;
-        width: 0px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 10px;
@@ -632,9 +557,10 @@ input {
     }
 
     .vertical-dic {
+        display: flex;
         margin-left: 96px;
         width: 100%;
-        height: 144px;
+        height: 155px;
         font-size: 15px;
         flex-wrap: wrap;
 
@@ -644,7 +570,7 @@ input {
         visibility: hidden;
     }
 
-    .container3 {
+    .section3 {
         height: 150vh;
 
     }
@@ -665,34 +591,29 @@ input {
         height: 200px;
     }
 
-    .container4 {
+    .section4 {
 
         height: 150vh;
     }
 
-.part1{flex-wrap: wrap;}
-    .part3,.part2 {
-        
-        width: 100%;
+    .part1 {
+        flex-wrap: wrap;
     }
 
+
     .picture {
-        /* width: 300px;
-        height: 190px; */
-        width: 100%;
-        height: 198px;
+        width: 300px;
+        height: 190px;
         pointer-events: none;
     }
 
-    .container5 {
+    .section5 {
         height: 90vh;
     }
 
     form {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-         /* flex-wrap: wrap;  */
+
+        flex-wrap: wrap;
         margin-top: 90px;
 
 
@@ -701,8 +622,8 @@ input {
     }
 
     .form {
-    height: 350px;
-   
+        height: 350px;
+
     }
 
     .form:hover {
@@ -715,7 +636,9 @@ input {
         flex-wrap: wrap;
         margin-right: auto;
         margin-left: auto;
-        
+        cursor: pointer;
+        position: sticky;
+
 
 
     }
@@ -725,8 +648,7 @@ input {
         height: 50px;
         margin: 5px;
         border: 2px solid orange;
-        background-color: rgb(255, 255, 255); 
-
+        background-color: rgb(255, 255, 255);
 
 
     }
@@ -734,6 +656,9 @@ input {
     .SUBJECT {
         width: 330px;
         border: 2px solid orange;
+        cursor: pointer;
+        position: sticky;
+
     }
 
     .message {
@@ -750,8 +675,6 @@ input {
         visibility: visible;
     }
 
+hr{display:none ;}
 
-    /* hr {
-        display: none;
-        
-    } */  }  
+}
