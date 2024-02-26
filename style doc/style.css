@@ -12,7 +12,7 @@
 
 .nav {
     display: flex;
-    border: 2px solid rgb(255, 103, 1);
+    border: 2px solid rgb(255, 255, 255);
     background-color: rgb(6, 4, 24);
     height: 50px;
     justify-content: space-around;
@@ -49,11 +49,15 @@ a:hover {
 
 }
 
+.Portfolio {
+    animation: animate 3s ease-in-out 1;
+}
+
 .box1 {
     background-color: rgba(255, 254, 254, 0.148);
     height: 200px;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -136,7 +140,7 @@ a:hover {
     background-color: rgba(255, 254, 254, 0.189);
     height: 100px;
     width: 300px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -241,9 +245,8 @@ a:hover {
 
 .section2,
 .section3,
-.section4,
 .section5 {
-    height: 100vh;
+    height: 85vh;
     background-color: rgb(33, 33, 43);
     color: rgb(238, 255, 0);
     text-align: center;
@@ -274,7 +277,7 @@ a:hover {
 
 h5 {
 
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 16px;
 
 }
@@ -283,11 +286,11 @@ i {
     position: relative;
     top: -32px;
     left: -8px;
-    color: rgb(238, 255, 0);
+    color: rgb(225, 255, 0);
 }
 
 .vertical-dic {
-    width: 220px;
+    width: 15vw;
     font-size: 12px;
     position: relative;
     right: 95px;
@@ -295,7 +298,7 @@ i {
     color: aqua;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.151);
-    height: 205px;
+    /* height: 190px; */
     line-height: 30px;
 
 }
@@ -304,7 +307,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 120px;
+    margin-top: 100px;
     height: 50px;
 }
 
@@ -312,55 +315,80 @@ i {
 .Web-design,
 .App,
 .software {
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    /* height: 300px; */
     background-color: black;
     margin-top: 8px;
     border-radius: 5px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     text-align: center;
     line-height: 30px;
 }
+
+.section4 {
+    height: 100vh;
+    background-color: rgb(33, 33, 43);
+    color: rgb(238, 255, 0);
+    text-align: center;
+    line-height: 20px;
+}
+
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .form {
     display: block;
-    width: 616px;
+    width: 620px;
     height: 400px;
 
+
 }
 
-.form:hover {
-    border: 5px solid rgb(0, 225, 255);
-}
+
 
 .form1 {
     display: flex;
-    width: 609px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 input {
-    width: 300px;
+    width: 98%;
     height: 50px;
     margin: 5px;
+    border: 2px solid orangered;
 }
 
 .message {
-    width: 600px;
+    /* width: 600px; */
     height: 200px;
     padding: 5px;
+    border: 2px solid orangered;
 }
 
-.SUBJECT {
-    width: 600px;
+.btn1 {
+    width: 98%;
     height: 50px;
     padding: 5px;
+    background-color: rgb(0, 209, 209);
+
 }
 
 .footer {
@@ -374,27 +402,48 @@ input {
     height: 30px;
 }
 
+@keyframes animate {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        color: rgb(255, 0, 170);
+    }
+
+    100% {
+        transform: rotate(360);
+    }
+}
+
 /* Media Queries */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width:1444px) {
+    .main {
+        background-color: rgb(33, 33, 43);
+    }
 
     .section {
 
-        height: 144vh;
+        height: 148vh;
 
     }
 
     .box {
         width: 100%;
-        height: 144vh;
-        display: flex;
-        flex-wrap: wrap;
-         background-color: rgb(33, 33, 43);
+        height: 148vh;
+        display: block;
+        background-color: rgb(33, 33, 43);
+        padding-top: 29px;
+    }
+
+    .Portfolio {
+        display: none;
     }
 
     .box1,
     .box2 {
-        width: 85%;
+        width: 100%;
         border-radius: 4px;
         background-color: rgb(24, 24, 30);
 
@@ -451,7 +500,8 @@ input {
     }
 
     .box3 {
-        width: 85%;
+
+        width: 100%;
         height: 300px;
         font-size: 15px;
         border-radius: 4px;
@@ -480,7 +530,7 @@ input {
     #panel2 {
         display: flex;
         color: white;
-        width: 341px;
+        width: 100%;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
@@ -498,14 +548,15 @@ input {
     }
 
     .nav {
-        position: relative;
+        position: absolute;
         font-size: 12px;
         height: 50px;
         width: 100%;
         border-radius: 4px;
         border-color: orange;
         box-shadow: 2px 0.5px 0.5px 2px orange;
-        right: 351px;
+        /* right: 351px; */
+        right: 1px;
     }
 
 
@@ -515,14 +566,15 @@ input {
     }
 
     .section2 {
-        margin-top: 0px;
+        margin-top: 6px;
         height: 190vh;
+
 
 
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .para2 {
@@ -532,7 +584,7 @@ input {
 
     h5 {
         font-size: 15px;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
         margin-left: 0px;
 
     }
@@ -549,7 +601,7 @@ input {
         display: inline;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         background-color: transparent;
         font-size: 18px;
 
@@ -559,8 +611,8 @@ input {
     .vertical-dic {
         display: flex;
         margin-left: 96px;
-        width: 100%;
-        height: 155px;
+        width: 80vw;
+        /* height: 155px; */
         font-size: 15px;
         flex-wrap: wrap;
 
@@ -572,6 +624,8 @@ input {
 
     .section3 {
         height: 150vh;
+        margin: 0px;
+        padding: 0px;
 
     }
 
@@ -580,14 +634,17 @@ input {
     }
 
     .services {
+        display: flex;
         flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
     }
 
     .graphic,
     .Web-design,
     .App,
     .software {
-        width: 350px;
+        width: 100%;
         height: 200px;
     }
 
@@ -596,25 +653,26 @@ input {
         height: 150vh;
     }
 
-    .part1 {
-        flex-wrap: wrap;
-    }
 
+
+
+    .gallery2 {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
 
     .picture {
         width: 300px;
-        height: 190px;
-        pointer-events: none;
-    }
-
-    .section5 {
-        height: 90vh;
+        height: 200px;
+        margin-top: 0px;
+        padding: 0px;
     }
 
     form {
 
         flex-wrap: wrap;
-        margin-top: 90px;
+        margin-top: 65px;
 
 
 
@@ -667,6 +725,10 @@ input {
         padding: 4px;
     }
 
+    .btn1 {
+        width: 330px;
+    }
+
     .footer1 {
         border: white;
     }
@@ -675,6 +737,7 @@ input {
         visibility: visible;
     }
 
-hr{display:none ;}
+
+    /* hr{display:none ;} */
 
 }
